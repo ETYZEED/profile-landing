@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Etyzeen ERP — Profil</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container" style="display:flex;align-items:center;gap:12px">
+  <img src="logo.svg" alt="Etyzeen ERP" width="48" height="48" style="border-radius:8px;object-fit:cover" />
+      <h1 style="margin:0">Etyzeen ERP</h1>
+      <nav style="margin-left:auto">
+        <a href="/">Home</a>
+        <a href="#features">Fitur</a>
+        <a href="#pricing">Harga</a>
+        <a href="#contact">Tanya</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-card">
+    <section class="hero">
+      <h2>ERP profesional untuk UMKM & Bisnis Berkembang</h2>
+      <p>Kelola stok, produksi, penjualan, dan keuangan dalam satu platform terintegrasi.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="/login">Login</a>
+        <button id="trialBtn" class="btn btn-secondary">Coba Gratis 14 hari</button>
+        <a class="btn btn-accent" href="/purchase">Beli Sekarang</a>
+      </div>
+    </section>
+
+    <section id="features" class="features">
+      <h3>Fitur Utama</h3>
+      <div class="grid">
+        <div class="card"><h4>Manajemen Stok & Produksi</h4><p>Pantau stok, produksi, dan pergerakan barang secara real-time.</p></div>
+        <div class="card"><h4>Keuangan & Akuntansi</h4><p>Pencatatan pemasukan, pengeluaran, jurnal, dan laporan otomatis.</p></div>
+        <div class="card"><h4>Penjualan & E-commerce</h4><p>Integrasi toko fisik dan online, sinkronisasi pesanan dan inventori.</p></div>
+        <div class="card"><h4>CRM & Karyawan</h4><p>Kelola relasi pelanggan, absensi, dan data karyawan.</p></div>
+        <div class="card"><h4>Laporan & Analitik</h4><p>Dashboard interaktif, grafik tren, dan export data.</p></div>
+      </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+      <h3>Paket & Harga (contoh)</h3>
+      <div class="grid">
+        <div class="price-card">
+          <h4>Starter</h4>
+          <p class="price">Rp 0 / bulan</p>
+          <p>Fitur dasar untuk usaha kecil. Coba gratis 14 hari.</p>
+          <button class="btn btn-outline" onclick="simulateBuy('Starter')">Pilih</button>
+        </div>
+        <div class="price-card">
+          <h4>Bisnis</h4>
+          <p class="price">Rp 199.000 / bulan</p>
+          <p>Modul inventory, penjualan, dan laporan lanjutan.</p>
+          <button class="btn btn-outline" onclick="simulateBuy('Bisnis')">Beli</button>
+        </div>
+        <div class="price-card">
+          <h4>Enterprise</h4>
+          <p class="price">Kontak sales</p>
+          <p>Multi-tenant, integrasi khusus, SSO.</p>
+          <button class="btn btn-outline" onclick="simulateBuy('Enterprise')">Kontak Sales</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <h3>Tanya / Hubungi Kami</h3>
+      <form id="contactForm">
+        <label>Nama <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label>Pesan <textarea name="message" rows="4" required></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn-primary">Kirim</button>
+          <button type="button" class="btn btn-link" onclick="openChat()">Chat dengan support</button>
+        </div>
+      </form>
+      <div id="contactResult" class="notice" style="display:none"></div>
+    </section>
+  </main>
+
+  <footer class="site-footer" style="background:#070707;color:#cfcfcf;padding:36px 0;margin-top:32px;border-top:1px solid rgba(255,255,255,0.03)">
+    <div class="container" style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;max-width:1100px;margin:0 auto">
+      <div>
+        <h4>Produk</h4>
+        <ul style="list-style:none;padding:0;margin:8px 0 0 0">
+          <li><a href="#">Komunitas</a></li>
+          <li><a href="#">Tutorial-tutorial</a></li>
+          <li><a href="#">Dokumentasi</a></li>
+          <li><a href="#">Forum</a></li>
+          <li><a href="#">Open Source</a></li>
+          <li><a href="#">Download</a></li>
+          <li><a href="#">Github</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Layanan</h4>
+        <ul style="list-style:none;padding:0;margin:8px 0 0 0">
+          <li><a href="#">Terjemahan</a></li>
+          <li><a href="#">Layanan</a></li>
+          <li><a href="#">Odoo.sh Hosting</a></li>
+          <li><a href="#">Bantuan</a></li>
+          <li><a href="#">Peningkatan</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Mitra & Komunitas</h4>
+{
